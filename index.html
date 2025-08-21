@@ -77,8 +77,7 @@
       </p>
     </header>
     <footer>
-      <a href="#about" class="button scrolly" style="background-color: #25D366;">Agenda por WhatsApp</a>
-      <a href="https://calendly.com/juankhseq/30min" class="button scrolly">Agenda tu asesoría gratis</a>
+      <a href="#about" class="button scrolly" style="background-color: #25D366;">Agenda por WhatsApp </a>
     </footer>
   </div>
 </section>
@@ -154,12 +153,8 @@
 							<a href="#" class="image featured"><img src="images/Agenda tu visita de asesoria.png" alt=" SST gratis" /></a>
 
 							<a href="https://wa.me/573184995702" target="_blank">
-								<button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;"> Agendar por WhatsApp
-  </button>
-</a>
-							
-							<button class="button primary" onclick="window.location.href='https://calendly.com/juankhseq/30min'">Agenda tu visita de asesoría</button>
-													<p>Programa tu primera asesoría sin costo. Durante esta sesión, podrás explicarme las necesidades 
+								<button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;"> Agendar por WhatsApp</button></a>
+							<p>Programa tu primera asesoría sin costo. Durante esta sesión, podrás explicarme las necesidades 
 														de tu empresa y te brindaré la solución más adecuada.</p>
 
 						</div>
@@ -205,21 +200,6 @@
   </div>
 </section>
 
-<!-- Popup de Lead Magnet -->
-  <div id="popup-lead" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); z-index:1000; align-items:center; justify-content:center;">
-	<div style="background:#fff; padding:30px; max-width:400px; border-radius:10px; text-align:center; box-shadow: 0 0 15px rgba(0,0,0,0.3); position:relative;">
-	  <button onclick="closePopup()" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:20px; cursor:pointer;">&times;</button>
-	  
-	  <h3>🎁 ¡Descarga gratis tu Checklist HSEQ!</h3>
-	  <p>Déjame tu correo y te enviaré una guía práctica para cumplir con los requisitos clave de los sistemas de gestión SST.</p>
-  
-	  <form id="popup-form">
-		<input type="text" name="name" placeholder="Tu nombre" required style="margin-bottom:10px; width:100%; padding:10px; border-radius:5px; border:1px solid #ccc;"><br>
-		<input type="email" name="email" placeholder="Tu correo electrónico" required style="margin-bottom:10px; width:100%; padding:10px; border-radius:5px; border:1px solid #ccc;"><br>
-		<input type="submit" value="¡Quiero mi Checklist!" style="background-color:#25D366; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;">
-	  </form>
-	</div>
-  </div>
 
 
 				<!-- Contact -->
@@ -316,32 +296,7 @@
   </script>
   
 <script>
-  // Mostrar popup después de 10 segundos
-  setTimeout(() => {
-    if (!sessionStorage.getItem("popupShown")) {
-      document.getElementById("popup-lead").style.display = "flex";
-      sessionStorage.setItem("popupShown", "true");
-    }
-  }, 10000);
 
-  // Cerrar popup
-  function closePopup() {
-    document.getElementById("popup-lead").style.display = "none";
-  }
-
-  // Envío de formulario con EmailJS
-  document.getElementById('popup-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm('service_9m2yzea', 'template_y2ufpxa', '#popup-form')
-      .then(() => {
-        alert("¡Checklist enviada a tu correo!");
-        closePopup();
-      }, (error) => {
-        alert("Hubo un error al enviar el formulario.");
-        console.log(error);
-      });
-  });
 </script>
 
 
