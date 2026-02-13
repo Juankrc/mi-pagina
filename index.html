@@ -1,304 +1,1310 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Consultor HSEQ Colombia | Juan Carlos Rodríguez</title>
-		<link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<meta name="description" content="Consultor especializado en HSEQ en Colombia. Asesorías, auditorías, capacitaciones y cumplimiento normativo en seguridad y salud en el trabajo, sst, ISO 9001, ISO 45001 y más. Agenda tu asesoría gratis.">
-		<meta charset="utf-8" />
-		<meta name="keywords" content="Consultor HSEQ, ISO 45001 Colombia, asesorías HSEQ, Juan Carlos Rodríguez, sistema gestión SST, Guía RUC, Diagnóstico HSE, ISO 9001, Seguridad y salud en el trabajo" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- Swiper CSS -->
-		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- SEO Meta Tags -->
+  <title>Consultor HSEQ Colombia | Juan Carlos Rodríguez | ISO 9001, 14001, 45001 y SST</title>
+  <meta name="description" content="Consultor HSEQ con +5 años de experiencia en Colombia. Certificaciones ISO 9001, ISO 14001, ISO 45001, SST y Guía RUC. Primera asesoría sin costo. ¡Agenda hoy!" />
+  <meta name="keywords" content="consultor HSEQ Colombia, ISO 9001 Colombia, ISO 45001, seguridad y salud en el trabajo, SST Colombia, auditoría HSEQ, Guía RUC, ISO 14001" />
+  <meta name="author" content="Juan Carlos Rodríguez" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.juancarloshseq.com/" />
 
-	</head>
-	<body class="is-preload">
+  <!-- Open Graph (WhatsApp / redes sociales) -->
+  <meta property="og:title" content="Consultor HSEQ Colombia | Juan Carlos Rodríguez" />
+  <meta property="og:description" content="+5 años certificando empresas colombianas en ISO 9001, 14001, 45001 y SST. Primera asesoría sin costo." />
+  <meta property="og:url" content="https://www.juancarloshseq.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.juancarloshseq.com/images/Avatar.png" />
 
-		<!-- Header -->
-			<div id="header">
+  <!-- Schema.org JSON-LD para SEO local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Juan Carlos Rodríguez - Consultor HSEQ",
+    "url": "https://www.juancarloshseq.com",
+    "telephone": "+573184995702",
+    "email": "juankhseq@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CO"
+    },
+    "description": "Consultoría HSEQ en Colombia: ISO 9001, ISO 14001, ISO 45001, SST y Guía RUC.",
+    "sameAs": ["https://www.linkedin.com/in/juanc-rodriguez-hseq/"]
+  }
+  </script>
 
-				<div class="top">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/Avatar.png" alt="" /></span>
-							<h1 id="title">Juan C Rodriguez</h1>
-							<p>Consultor HSEQ</p>
-						</div>
+  <style>
+    /* ── Reset & Variables ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">Agendar visita</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contacto</span></a></li>
-							</ul>
-						</nav>
+    :root {
+      --navy:    #0B1F3A;
+      --navy2:   #122848;
+      --blue:    #1565C0;
+      --sky:     #2196F3;
+      --gold:    #F9A825;
+      --gold2:   #FFD54F;
+      --white:   #FFFFFF;
+      --offwhite:#F4F7FB;
+      --gray:    #6B7A8D;
+      --lgray:   #E3EAF3;
+      --text:    #1A2A40;
+      --green:   #00897B;
 
-				</div>
+      --font-head: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
 
-				<div class="bottom">
+      --shadow-sm: 0 2px 12px rgba(11,31,58,.08);
+      --shadow-md: 0 8px 32px rgba(11,31,58,.13);
+      --shadow-lg: 0 20px 60px rgba(11,31,58,.18);
+      --radius: 12px;
+    }
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/juanc-rodriguez-hseq/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+    html { scroll-behavior: smooth; }
 
-				</div>
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
 
-			</div>
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
 
-		<!-- Main -->
-			<div id="main">
+    /* ── Utility ───────────────────────────────────────────────────── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .section    { padding: 88px 0; }
+    .section-alt { background: var(--offwhite); }
 
-				<!-- Intro -->
-<section id="top" class="one dark cover">
-  <div class="container">
-    <header>
-      <h2 class="alt">
-        <strong>¿Necesitas certificar a tu empresa en ISO 9001, ISO 14001, ISO 45001 o cumplir con la normativa legal en Seguridad y Salud en el Trabajo en Colombia?</strong><br />
-        Yo puedo ayudarte.
-      </h2>
-      <p>👷 Soy <strong>Juan Carlos Rodríguez</strong>, consultor con más de 5 años de experiencia en<br />
-        ISO 9001, ISO 14001, ISO 45001, seguridad y salud en el trabajo, Guía RUC y más.<br />
-        Ayudo a empresas como la tuya a <strong>cumplir la norma, reducir riesgos</strong> y<br />
-        <strong>evitar sanciones</strong> con asesorías prácticas y enfocadas en resultados.
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(249,168,37,.15); color: #8a5c00;
+      border: 1px solid rgba(249,168,37,.4);
+      border-radius: 50px; padding: 5px 14px;
+      font-size: .78rem; font-weight: 600; letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--gray);
+      max-width: 580px;
+      margin-bottom: 48px;
+    }
+
+    /* ── Buttons ───────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 8px;
+      font-family: var(--font-body); font-size: .95rem; font-weight: 600;
+      cursor: pointer; border: none; transition: all .22s ease;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      box-shadow: 0 4px 18px rgba(249,168,37,.4);
+    }
+    .btn-primary:hover {
+      background: var(--gold2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(249,168,37,.5);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,.55);
+      color: var(--white);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,.1);
+      border-color: var(--white);
+    }
+    .btn-navy {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .btn-navy:hover {
+      background: var(--navy2);
+      transform: translateY(-2px);
+    }
+
+    .whatsapp-icon { font-size: 1.15rem; }
+
+    /* ── NAV ───────────────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(11,31,58,.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: var(--font-head);
+      font-size: 1.15rem; font-weight: 700;
+      color: var(--white); letter-spacing: -.01em;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex; align-items: center; gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,.75);
+      font-size: .9rem; font-weight: 500;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta { margin-left: 16px; }
+
+    /* ── HERO ──────────────────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(11,31,58,.97) 0%, rgba(21,101,192,.88) 100%),
+        url('images/campo.jpg') center/cover no-repeat;
+      display: flex; align-items: center;
+      padding: 100px 24px 60px;
+      position: relative; overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(249,168,37,.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Diagonal geometric accent */
+    #hero::after {
+      content: '';
+      position: absolute; right: -80px; bottom: -80px;
+      width: 420px; height: 420px;
+      border: 2px solid rgba(249,168,37,.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 64px; align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 24px;
+    }
+    .hero-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--gold); animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .5; transform: scale(1.3); }
+    }
+    .hero-eyebrow span {
+      color: var(--gold); font-size: .85rem;
+      font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero-title em { color: var(--gold); font-style: normal; }
+
+    .hero-desc {
+      font-size: 1.1rem; color: rgba(255,255,255,.78);
+      max-width: 520px; margin-bottom: 36px; line-height: 1.7;
+    }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .hero-trust {
+      margin-top: 52px;
+      display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+    }
+    .trust-divider {
+      width: 1px; height: 36px;
+      background: rgba(255,255,255,.2);
+    }
+    .trust-item { text-align: center; }
+    .trust-num {
+      font-family: var(--font-head);
+      font-size: 1.8rem; font-weight: 900;
+      color: var(--gold); line-height: 1;
+    }
+    .trust-label {
+      font-size: .75rem; color: rgba(255,255,255,.55);
+      text-transform: uppercase; letter-spacing: .06em; margin-top: 2px;
+    }
+
+    /* Avatar card */
+    .hero-card {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 20px;
+      padding: 32px 28px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      min-width: 220px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .hero-avatar {
+      width: 120px; height: 120px; border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--gold);
+      margin: 0 auto 16px;
+    }
+    .hero-card-name {
+      font-family: var(--font-head);
+      font-size: 1.1rem; color: var(--white); font-weight: 700;
+    }
+    .hero-card-title {
+      font-size: .82rem; color: var(--gold);
+      letter-spacing: .05em; text-transform: uppercase; margin-top: 4px;
+    }
+    .hero-card-badges {
+      margin-top: 16px;
+      display: flex; flex-direction: column; gap: 7px;
+    }
+    .hbadge {
+      background: rgba(255,255,255,.08);
+      border-radius: 6px; padding: 5px 10px;
+      font-size: .78rem; color: rgba(255,255,255,.8);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    /* ── WHY ME ────────────────────────────────────────────────────── */
+    #why {
+      background: var(--navy);
+      padding: 80px 24px;
+    }
+    .why-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 56px; align-items: center;
+    }
+    .why-label {
+      font-size: .8rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+    }
+    .why-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--white); line-height: 1.25; margin-bottom: 20px;
+    }
+    .why-desc { color: rgba(255,255,255,.65); font-size: 1rem; line-height: 1.75; }
+
+    .why-items { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+
+    .why-item {
+      display: flex; align-items: flex-start; gap: 16px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 10px; padding: 18px 20px;
+      transition: background .2s;
+    }
+    .why-item:hover { background: rgba(255,255,255,.09); }
+    .why-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: rgba(249,168,37,.15);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .why-item-text h4 { color: var(--white); font-weight: 600; font-size: .95rem; }
+    .why-item-text p { color: rgba(255,255,255,.55); font-size: .88rem; margin-top: 3px; }
+
+    .why-stats {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .stat-card {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 14px; padding: 28px 24px;
+      text-align: center; position: relative; overflow: hidden;
+      transition: transform .2s, border-color .2s;
+    }
+    .stat-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+    .stat-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--sky));
+    }
+    .stat-num {
+      font-family: var(--font-head);
+      font-size: 2.6rem; font-weight: 900;
+      color: var(--gold); line-height: 1;
+    }
+    .stat-unit { font-size: 1.4rem; }
+    .stat-label {
+      color: rgba(255,255,255,.6);
+      font-size: .82rem; margin-top: 6px; line-height: 1.4;
+    }
+
+    /* ── SERVICES ──────────────────────────────────────────────────── */
+    #services { padding: 88px 24px; }
+    .services-header { text-align: center; margin-bottom: 56px; }
+    .services-header .section-sub { margin: 12px auto 0; }
+
+    .services-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--lgray);
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+      background: var(--white);
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--sky);
+    }
+    .service-img {
+      width: 100%; height: 180px;
+      object-fit: cover;
+    }
+    .service-body { padding: 24px 22px; }
+    .service-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--blue), var(--sky));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem; margin-bottom: 14px; color: white;
+    }
+    .service-name {
+      font-family: var(--font-head);
+      font-size: 1.15rem; color: var(--navy); margin-bottom: 8px;
+    }
+    .service-desc { font-size: .9rem; color: var(--gray); line-height: 1.65; }
+    .service-tags { margin-top: 14px; display: flex; gap: 6px; flex-wrap: wrap; }
+    .stag {
+      background: var(--offwhite); border: 1px solid var(--lgray);
+      border-radius: 50px; padding: 3px 10px;
+      font-size: .75rem; color: var(--blue); font-weight: 500;
+    }
+
+    /* ── NORMAS BANNER ─────────────────────────────────────────────── */
+    #normas {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+      padding: 56px 24px;
+    }
+    .normas-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; gap: 40px; flex-wrap: wrap;
+    }
+    .normas-text { flex: 1; min-width: 260px; }
+    .normas-text h3 {
+      font-family: var(--font-head);
+      font-size: 1.6rem; color: var(--white); margin-bottom: 8px;
+    }
+    .normas-text p { color: rgba(255,255,255,.7); font-size: .95rem; }
+    .normas-pills {
+      display: flex; gap: 12px; flex-wrap: wrap; flex: 2;
+      justify-content: flex-end;
+    }
+    .npill {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 8px; padding: 12px 20px;
+      text-align: center; min-width: 100px;
+      transition: background .2s;
+    }
+    .npill:hover { background: rgba(255,255,255,.2); }
+    .npill-name {
+      font-family: var(--font-head);
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--gold);
+    }
+    .npill-desc { font-size: .72rem; color: rgba(255,255,255,.6); margin-top: 2px; }
+
+    /* ── PROCESS ───────────────────────────────────────────────────── */
+    #process { padding: 88px 24px; background: var(--offwhite); }
+    .process-header { text-align: center; margin-bottom: 56px; }
+    .process-steps {
+      max-width: 900px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute; top: 36px; left: 12.5%; right: 12.5%;
+      height: 2px; background: linear-gradient(90deg, var(--blue), var(--gold));
+      z-index: 0;
+    }
+    .pstep {
+      text-align: center; padding: 0 12px; position: relative; z-index: 1;
+    }
+    .pstep-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--white);
+      border: 3px solid var(--blue);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+      font-family: var(--font-head);
+      font-size: 1.4rem; font-weight: 900; color: var(--blue);
+      box-shadow: 0 4px 20px rgba(21,101,192,.2);
+    }
+    .pstep-title {
+      font-weight: 700; color: var(--navy); font-size: .95rem; margin-bottom: 6px;
+    }
+    .pstep-desc { font-size: .84rem; color: var(--gray); line-height: 1.55; }
+
+    /* ── TESTIMONIALS ──────────────────────────────────────────────── */
+    #testimonials { padding: 88px 24px; }
+    .testimonials-header { text-align: center; margin-bottom: 56px; }
+    .testi-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testi-card {
+      background: var(--white);
+      border: 1px solid var(--lgray);
+      border-radius: var(--radius);
+      padding: 28px 26px;
+      box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s;
+      position: relative;
+    }
+    .testi-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .testi-quote {
+      font-size: 2.5rem; line-height: 1;
+      color: var(--gold); font-family: Georgia;
+      margin-bottom: 10px;
+    }
+    .testi-text {
+      font-size: .93rem; color: var(--gray);
+      line-height: 1.7; margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testi-author {
+      display: flex; align-items: center; gap: 12px;
+      border-top: 1px solid var(--lgray); padding-top: 16px;
+    }
+    .testi-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), var(--sky));
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-weight: 700; font-size: 1rem; flex-shrink: 0;
+    }
+    .testi-name { font-weight: 700; font-size: .9rem; color: var(--navy); }
+    .testi-role { font-size: .78rem; color: var(--gray); margin-top: 1px; }
+    .stars { color: var(--gold); font-size: .85rem; margin-bottom: 10px; }
+
+    /* Logos de empresas */
+    .client-logos {
+      margin-top: 56px;
+      text-align: center;
+    }
+    .client-logos p {
+      font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--gray); margin-bottom: 28px; font-weight: 600;
+    }
+    .logos-row {
+      display: flex; justify-content: center;
+      align-items: center; gap: 40px; flex-wrap: wrap;
+      max-width: 1100px; margin: 0 auto;
+    }
+    .logo-item {
+      filter: grayscale(1); opacity: .55;
+      transition: filter .2s, opacity .2s;
+    }
+    .logo-item:hover { filter: grayscale(0); opacity: 1; }
+    .logo-item img { height: 48px; width: auto; object-fit: contain; }
+
+    /* ── FREE CONSULT CTA ──────────────────────────────────────────── */
+    #cta {
+      background: linear-gradient(135deg, var(--navy) 0%, #1a3a6b 100%);
+      padding: 80px 24px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    #cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, rgba(249,168,37,.07) 0%, transparent 65%);
+    }
+    .cta-inner { position: relative; max-width: 640px; margin: 0 auto; }
+    .cta-inner .badge { margin-bottom: 20px; }
+    .cta-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--white); line-height: 1.2; margin-bottom: 16px;
+    }
+    .cta-title em { color: var(--gold); font-style: normal; }
+    .cta-desc { color: rgba(255,255,255,.7); font-size: 1rem; margin-bottom: 36px; }
+    .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .cta-note {
+      margin-top: 20px; font-size: .8rem;
+      color: rgba(255,255,255,.45);
+    }
+
+    /* ── CONTACT ───────────────────────────────────────────────────── */
+    #contact { padding: 88px 24px; background: var(--offwhite); }
+    .contact-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.4fr;
+      gap: 56px; align-items: start;
+    }
+    .contact-info h2 {
+      font-family: var(--font-head);
+      font-size: 2rem; color: var(--navy); margin-bottom: 12px;
+    }
+    .contact-info p { color: var(--gray); margin-bottom: 32px; font-size: .97rem; }
+
+    .contact-item {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 18px;
+    }
+    .contact-icon {
+      width: 46px; height: 46px; border-radius: 10px;
+      background: var(--blue); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.15rem; flex-shrink: 0;
+    }
+    .contact-item-text strong {
+      display: block; font-size: .85rem;
+      text-transform: uppercase; letter-spacing: .06em;
+      color: var(--gray); margin-bottom: 2px;
+    }
+    .contact-item-text a, .contact-item-text span {
+      color: var(--navy); font-weight: 600;
+    }
+    .contact-item-text a:hover { color: var(--blue); }
+
+    .contact-form {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      box-shadow: var(--shadow-md);
+    }
+    .contact-form h3 {
+      font-family: var(--font-head);
+      font-size: 1.4rem; color: var(--navy); margin-bottom: 24px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block; font-size: .83rem; font-weight: 600;
+      color: var(--navy); margin-bottom: 6px;
+      text-transform: uppercase; letter-spacing: .04em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: 12px 14px;
+      border: 1.5px solid var(--lgray);
+      border-radius: 8px;
+      font-family: var(--font-body); font-size: .95rem;
+      color: var(--text);
+      outline: none; transition: border-color .2s, box-shadow .2s;
+      background: var(--white);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(21,101,192,.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-submit { width: 100%; padding: 15px; font-size: 1rem; }
+
+    /* ── FOOTER ────────────────────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      padding: 48px 24px 28px;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; flex-direction: column; gap: 32px;
+    }
+    .footer-top {
+      display: flex; justify-content: space-between;
+      align-items: flex-start; flex-wrap: wrap; gap: 32px;
+    }
+    .footer-brand .nav-logo { font-size: 1.2rem; margin-bottom: 10px; }
+    .footer-brand p { color: rgba(255,255,255,.45); font-size: .85rem; max-width: 260px; }
+    .footer-links h4 {
+      color: var(--gold); font-size: .8rem;
+      letter-spacing: .1em; text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-links a { color: rgba(255,255,255,.55); font-size: .88rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+    .social-btn {
+      width: 38px; height: 38px; border-radius: 8px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.6); font-size: .95rem;
+      transition: background .2s, color .2s;
+    }
+    .social-btn:hover { background: var(--blue); color: white; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 20px;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { color: rgba(255,255,255,.35); font-size: .82rem; }
+
+    /* ── FLOATING WHATSAPP ─────────────────────────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 999;
+      display: flex; align-items: center; gap: 10px;
+      background: #25D366; color: white;
+      padding: 13px 20px; border-radius: 50px;
+      box-shadow: 0 6px 24px rgba(37,211,102,.45);
+      font-weight: 600; font-size: .9rem;
+      transition: transform .2s, box-shadow .2s;
+      animation: waAppear .6s ease .5s both;
+    }
+    @keyframes waAppear {
+      from { opacity: 0; transform: translateY(20px) scale(.9); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .wa-float:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(37,211,102,.55);
+    }
+    .wa-float svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+
+    /* ── RESPONSIVE ────────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-stats { grid-template-columns: repeat(4, 1fr); }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .testi-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .why-stats { grid-template-columns: repeat(2, 1fr); }
+      .form-row { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .normas-pills { justify-content: flex-start; }
+    }
+
+    /* ── Fade-in on scroll ─────────────────────────────────────────── */
+    .fade-up {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Juan C. <span>Rodríguez</span></div>
+    <ul class="nav-links">
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#process">¿Cómo trabajo?</a></li>
+      <li><a href="#testimonials">Clientes</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/573184995702?text=Hola%20Juan%20Carlos,%20quiero%20información%20sobre%20consultoría%20HSEQ"
+       target="_blank" class="btn btn-primary nav-cta" style="padding:10px 20px;font-size:.85rem;">
+      📲 Agenda gratis
+    </a>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-dot"></div>
+        <span>Consultor HSEQ certificado · Colombia</span>
+      </div>
+
+      <h1 class="hero-title">
+        Certifica tu empresa en<br/>
+        <em>ISO 9001, 14001 y 45001</em><br/>
+        sin complicaciones
+      </h1>
+
+      <p class="hero-desc">
+        Más de <strong style="color:var(--gold)">5 años</strong> ayudando a empresas colombianas
+        a cumplir la normativa, reducir riesgos y evitar sanciones.
+        Asesoría práctica, enfocada en resultados reales.
       </p>
-    </header>
-    <footer>
-      <a href="#about" class="button scrolly" style="background-color: #25D366;">Agenda por WhatsApp </a>
-    </footer>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/573184995702?text=Hola%20Juan%20Carlos,%20quiero%20agendar%20una%20asesoría%20gratuita%20HSEQ"
+           target="_blank" class="btn btn-primary">
+          📲 Agenda tu asesoría gratis
+        </a>
+        <a href="#services" class="btn btn-outline">
+          Ver servicios →
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item">
+          <div class="trust-num">+30</div>
+          <div class="trust-label">Empresas<br/>asesoradas</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-num">+5</div>
+          <div class="trust-label">Años de<br/>experiencia</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-num">4</div>
+          <div class="trust-label">Normas<br/>ISO</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-num">0</div>
+          <div class="trust-label">Costo primera<br/>asesoría</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img src="images/Avatar.png" alt="Juan Carlos Rodríguez - Consultor HSEQ" class="hero-avatar" />
+      <div class="hero-card-name">Juan Carlos Rodríguez</div>
+      <div class="hero-card-title">Consultor HSEQ</div>
+      <div class="hero-card-badges">
+        <div class="hbadge">✅ ISO 9001 · 14001 · 45001</div>
+        <div class="hbadge">✅ Seguridad y Salud en el Trabajo</div>
+        <div class="hbadge">✅ Guía RUC</div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- ── WHY ME ────────────────────────────────────────────────────────── -->
+<section id="why">
+  <div class="why-grid">
+    <div class="fade-up">
+      <div class="why-label">¿Por qué elegirme?</div>
+      <h2 class="why-title">Experiencia real,<br/>resultados comprobados</h2>
+      <p class="why-desc">No solo conozco las normas — las he implementado en empresas de múltiples sectores. Te acompaño en cada paso, desde el diagnóstico inicial hasta la certificación.</p>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Comprometido con el éxito de tu organización, te ofrezco soluciones integrales y personalizadas en consultoría HSEQ, incluyendo asesoría HSEQ, auditorías HSEQ, capacitación HSEQ y acompañamiento en campo HSE/SST, diseñadas para fortalecer tu sistema de gestión HSEQ y asegurar el cumplimiento normativo según los estándares ISO 9001, ISO 14001, ISO 45001 y la Guía RUC.
-<br> Cuento con experiencia en múltiples sectores, colaborando directamente contigo para optimizar procesos de calidad y seguridad, gestionar riesgos laborales y promover el bienestar y la Seguridad y Salud en el Trabajo (SST). Mi objetivo es ayudarte a alcanzar los objetivos estratégicos de tu empresa mediante herramientas prácticas y efectivas que marcan la diferencia en tu gestión diaria y te protegen de posibles sanciones.
-</p>
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/ascesoria.webp" alt="SST (Seguridad y Salud en el Trabajo)" /></a>
-										<header>
-											<h3>Asesorías/Consultorías</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/Auditoria.jpg" alt="ISO 9001" /></a>
-										<header>
-											<h3>Auditorias</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/campo.jpg" alt="Auditorias" /></a>
-										<header>
-											<h3>Acompañamiento en campo HSE (SISO)</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/Image diagnostico.png" alt="SST" /></a>
-										<header>
-											<h3>Diagnostico</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/empresas.jpg" alt="asesoria" /></a>
-										<header>
-											<h3>Servicios para pequeñas empresas</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/Aliados.png" alt="" /></a>
-										<header>
-											<h3> Red de aliados</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>Agenda tu visita</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/Agenda tu visita de asesoria.png" alt=" SST gratis" /></a>
-
-							<a href="https://wa.me/573184995702" target="_blank">
-								<button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;"> Agendar por WhatsApp</button></a>
-							<p>Programa tu primera asesoría sin costo. Durante esta sesión, podrás explicarme las necesidades 
-														de tu empresa y te brindaré la solución más adecuada.</p>
-
-						</div>
-					</section>
-
-					<!-- Testimonios -->
-<section id="testimonios" class="four">
-  <div class="container">
-    <header>
-      <h2>Empresas que han confiado en nuestra consultoría HSEQ</h2>
-    </header>
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <!-- Testimonio 1 -->
-        <div class="swiper-slide">
-          <img src="images/Ital-lent.jpg" alt="SST" style="max-width: 100px; margin-bottom: 10px;">
-          <blockquote style="background: #f9f9f9; padding: 20px; border-radius: 12px; font-style: italic;">
-            “Seguridad y salud en el trabajo”
-            <br><br><strong>—______________</strong>
-          </blockquote>
+      <div class="why-items">
+        <div class="why-item">
+          <div class="why-icon">🎯</div>
+          <div class="why-item-text">
+            <h4>Enfoque en resultados, no en papeleo</h4>
+            <p>Implementaciones prácticas que funcionan en el día a día de tu empresa.</p>
+          </div>
         </div>
-
-        <!-- Testimonio 2 -->
-        <div class="swiper-slide">
-          <img src="images/LOGO FOLKS.jpg" alt="Seguridad y salud en el trabajo" style="max-width: 1500px; margin-bottom: 10px;">
-          <blockquote style="background: #f9f9f9; padding: 20px; border-radius: 12px; font-style: italic;">
-            “Seguridad y salud en el trabajo”
-            <br><br><strong>—_________________</strong>
-          </blockquote>
+        <div class="why-item">
+          <div class="why-icon">⚡</div>
+          <div class="why-item-text">
+            <h4>Acompañamiento hasta la certificación</h4>
+            <p>Estoy contigo en auditorías, capacitaciones y ante los organismos certificadores.</p>
+          </div>
         </div>
+        <div class="why-item">
+          <div class="why-icon">🛡️</div>
+          <div class="why-item-text">
+            <h4>Conocimiento actualizado de la norma colombiana</h4>
+            <p>Legislación SST, Decreto 1072, Resolución 0312 y Guía RUC siempre al día.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Testimonio 3 -->
-        <div class="swiper-slide">
-          <img src="images/logo-portes.png" alt="Salud Segura SAS" style="max-width: 500px; margin-bottom: 10px;">
-          <blockquote style="background: #f9f9f9; padding: 20px; border-radius: 12px; font-style: italic;">
-            “ISO 9001, ISO 45001, ISO 14001 y seguridad vial.”
-            <br><br><strong>—______________</strong>
-          </blockquote>
+    <div class="why-stats fade-up">
+      <div class="stat-card">
+        <div class="stat-num">+30<span class="stat-unit" style="font-size:1.2rem"></span></div>
+        <div class="stat-label">Empresas certificadas y asesoradas en Colombia</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">+5<span class="stat-unit" style="font-size:1.2rem">años</span></div>
+        <div class="stat-label">De experiencia en HSEQ y SST</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Sectores industriales con los que he trabajado</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100<span class="stat-unit">%</span></div>
+        <div class="stat-label">Compromiso con el cumplimiento normativo de tu empresa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NORMAS ────────────────────────────────────────────────────────── -->
+<section id="normas">
+  <div class="normas-inner">
+    <div class="normas-text">
+      <h3>Normas que domino</h3>
+      <p>Experiencia certificada en los estándares más exigentes del sector.</p>
+    </div>
+    <div class="normas-pills">
+      <div class="npill">
+        <div class="npill-name">ISO 9001</div>
+        <div class="npill-desc">Calidad</div>
+      </div>
+      <div class="npill">
+        <div class="npill-name">ISO 14001</div>
+        <div class="npill-desc">Medio Ambiente</div>
+      </div>
+      <div class="npill">
+        <div class="npill-name">ISO 45001</div>
+        <div class="npill-desc">Seguridad Laboral</div>
+      </div>
+      <div class="npill">
+        <div class="npill-name">Guía RUC</div>
+        <div class="npill-desc">Contratistas</div>
+      </div>
+      <div class="npill">
+        <div class="npill-name">Dec. 1072</div>
+        <div class="npill-desc">SST Colombia</div>
+      </div>
+      <div class="npill">
+        <div class="npill-name">Res. 0312</div>
+        <div class="npill-desc">Estándares Mínimos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ──────────────────────────────────────────────────────── -->
+<section id="services">
+  <div class="services-header fade-up">
+    <span class="badge">Servicios</span>
+    <h2 class="section-title" style="margin-top:12px;">Todo lo que tu empresa necesita<br/>para cumplir y crecer</h2>
+    <p class="section-sub">Soluciones integrales de consultoría HSEQ, adaptadas a tu sector y tamaño de empresa.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <img src="images/ascesoria.webp" alt="Asesoría y Consultoría HSEQ" class="service-img" />
+      <div class="service-body">
+        <div class="service-icon">📋</div>
+        <h3 class="service-name">Asesorías y Consultorías HSEQ</h3>
+        <p class="service-desc">Diseño e implementación de tu Sistema de Gestión Integrado desde cero o mejora del existente. Incluye diagnóstico, documentación y acompañamiento continuo.</p>
+        <div class="service-tags">
+          <span class="stag">ISO 9001</span>
+          <span class="stag">ISO 14001</span>
+          <span class="stag">ISO 45001</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card fade-up">
+      <img src="images/Auditoria.jpg" alt="Auditorías HSEQ" class="service-img" />
+      <div class="service-body">
+        <div class="service-icon">🔍</div>
+        <h3 class="service-name">Auditorías HSEQ</h3>
+        <p class="service-desc">Auditorías internas y de seguimiento para identificar brechas, prevenir no conformidades y preparar a tu empresa para la certificación con organismos externos.</p>
+        <div class="service-tags">
+          <span class="stag">Auditoría interna</span>
+          <span class="stag">Pre-certificación</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card fade-up">
+      <img src="images/campo.jpg" alt="Acompañamiento en campo HSE" class="service-img" />
+      <div class="service-body">
+        <div class="service-icon">👷</div>
+        <h3 class="service-name">Acompañamiento en campo HSE</h3>
+        <p class="service-desc">Presencia directa en tus instalaciones para implementar medidas de seguridad, inspecciones, identificación de peligros y control de riesgos en tiempo real.</p>
+        <div class="service-tags">
+          <span class="stag">SISO</span>
+          <span class="stag">Inspecciones</span>
+          <span class="stag">SST</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card fade-up">
+      <img src="images/Image diagnostico.png" alt="Diagnóstico empresarial HSEQ" class="service-img" />
+      <div class="service-body">
+        <div class="service-icon">📊</div>
+        <h3 class="service-name">Diagnóstico Empresarial</h3>
+        <p class="service-desc">Evaluación inicial del estado actual de tu sistema HSEQ frente a los requisitos normativos. Obtendrás un informe claro con el plan de acción priorizado.</p>
+        <div class="service-tags">
+          <span class="stag">Evaluación inicial</span>
+          <span class="stag">Plan de acción</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card fade-up">
+      <img src="images/empresas.jpg" alt="Servicios para pequeñas empresas" class="service-img" />
+      <div class="service-body">
+        <div class="service-icon">🏢</div>
+        <h3 class="service-name">Servicios para Pequeñas Empresas</h3>
+        <p class="service-desc">Paquetes especiales para MiPymes: cumplimiento de la Resolución 0312, implementación del SG-SST y capacitación del personal con tarifas accesibles.</p>
+        <div class="service-tags">
+          <span class="stag">MiPymes</span>
+          <span class="stag">Res. 0312</span>
+          <span class="stag">SG-SST</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card fade-up">
+      <img src="images/Aliados.png" alt="Red de aliados HSEQ" class="service-img" />
+      <div class="service-body">
+        <div class="service-icon">🤝</div>
+        <h3 class="service-name">Red de Aliados Especializados</h3>
+        <p class="service-desc">Accede a una red de profesionales complementarios: médicos laborales, ingenieros ambientales, organismos certificadores y capacitadores especializados.</p>
+        <div class="service-tags">
+          <span class="stag">Salud Ocupacional</span>
+          <span class="stag">Medio ambiente</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ── PROCESS ───────────────────────────────────────────────────────── -->
+<section id="process">
+  <div class="process-header fade-up">
+    <span class="badge">Mi método</span>
+    <h2 class="section-title" style="margin-top:12px;">¿Cómo trabajo contigo?</h2>
+    <p class="section-sub" style="margin:12px auto 0;">Un proceso claro, sin sorpresas, pensado para que tu empresa alcance la certificación con el menor esfuerzo posible.</p>
+  </div>
 
+  <div class="process-steps">
+    <div class="pstep fade-up">
+      <div class="pstep-num">01</div>
+      <div class="pstep-title">Diagnóstico gratuito</div>
+      <p class="pstep-desc">Evaluamos el estado actual de tu empresa y definimos la brecha frente a la norma.</p>
+    </div>
+    <div class="pstep fade-up">
+      <div class="pstep-num">02</div>
+      <div class="pstep-title">Plan personalizado</div>
+      <p class="pstep-desc">Diseñamos un plan de implementación realista según tus tiempos, recursos y sector.</p>
+    </div>
+    <div class="pstep fade-up">
+      <div class="pstep-num">03</div>
+      <div class="pstep-title">Implementación</div>
+      <p class="pstep-desc">Documentamos, capacitamos y acompañamos a tu equipo durante toda la implementación.</p>
+    </div>
+    <div class="pstep fade-up">
+      <div class="pstep-num">04</div>
+      <div class="pstep-title">Certificación</div>
+      <p class="pstep-desc">Te preparamos y acompañamos en la auditoría de certificación con el organismo acreditado.</p>
+    </div>
+  </div>
+</section>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+<!-- ── TESTIMONIALS ──────────────────────────────────────────────────── -->
+<section id="testimonials">
+  <div class="testimonials-header fade-up">
+    <span class="badge">Testimonios</span>
+    <h2 class="section-title" style="margin-top:12px;">Lo que dicen mis clientes</h2>
+    <p class="section-sub" style="margin:12px auto 0;">Empresas colombianas que confiaron en mi consultoría y lograron sus objetivos.</p>
+  </div>
 
-							<header>
-								<h2>Contacto</h2>
-							</header>
+  <div class="testi-grid">
+    <div class="testi-card fade-up">
+      <div class="stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Juan Carlos nos ayudó a implementar el SG-SST desde cero. Su acompañamiento fue clave para que pasáramos la auditoría de la Res. 0312 sin ninguna no conformidad. Muy profesional y siempre disponible.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">IL</div>
+        <div>
+          <div class="testi-name">Ital-Lent S.A.S.</div>
+          <div class="testi-role">Sector Manufactura · Bogotá</div>
+        </div>
+      </div>
+    </div>
 
-							<p>Si deseas que te contacte, déjame tus datos en este formulario y 
-								cuéntame en qué puedo ayudarte. Te responderé a la brevedad.</p>
+    <div class="testi-card fade-up">
+      <div class="stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Logramos la certificación ISO 45001 en tiempo récord gracias a la metodología de Juan Carlos. Nos explicó cada requisito de manera práctica y su red de aliados fue fundamental para los temas de salud ocupacional.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">FL</div>
+        <div>
+          <div class="testi-name">Folks Colombia</div>
+          <div class="testi-role">Sector Servicios · Bogotá</div>
+        </div>
+      </div>
+    </div>
 
-							<form id="contact-form" method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+    <div class="testi-card fade-up">
+      <div class="stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Contratamos a Juan Carlos para implementar ISO 9001, ISO 45001, ISO 14001 y seguridad vial simultáneamente. Su capacidad para gestionar los cuatro sistemas a la vez y su conocimiento de la normativa colombiana nos sorprendió. 100% recomendado.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">PO</div>
+        <div>
+          <div class="testi-name">Portes de colombia</div>
+          <div class="testi-role">Logística y Transporte · Colombia</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-						</div>
-					</section>
+  <!-- Logos de empresas -->
+  <div class="client-logos fade-up">
+    <p>Empresas que han confiado en mi consultoría</p>
+    <div class="logos-row">
+      <div class="logo-item"><img src="images/Ital-lent.jpg" alt="Ital-Lent" /></div>
+      <div class="logo-item"><img src="images/LOGO FOLKS.jpg" alt="Folks Colombia" /></div>
+      <div class="logo-item"><img src="images/logo-portes.png" alt="Portes" /></div>
+    </div>
+  </div>
+</section>
 
-			</div>
+<!-- ── CTA BANNER ────────────────────────────────────────────────────── -->
+<section id="cta">
+  <div class="cta-inner fade-up">
+    <span class="badge" style="background:rgba(249,168,37,.2);color:var(--gold2);border-color:rgba(249,168,37,.4);">
+      🎁 Sin costo
+    </span>
+    <h2 class="cta-title">
+      Tu primera asesoría<br/><em>es completamente gratis</em>
+    </h2>
+    <p class="cta-desc">
+      Cuéntame los retos de tu empresa y te digo exactamente qué necesitas para cumplir la norma, reducir riesgos y evitar sanciones. Sin compromiso.
+    </p>
+    <div class="cta-actions">
+      <a href="https://wa.me/573184995702?text=Hola%20Juan%20Carlos,%20quiero%20agendar%20mi%20asesoría%20gratuita%20HSEQ"
+         target="_blank" class="btn btn-primary" style="font-size:1rem;padding:16px 32px;">
+        📲 Agendar por WhatsApp
+      </a>
+      <a href="#contact" class="btn btn-outline" style="font-size:1rem;padding:16px 32px;">
+        Enviar formulario
+      </a>
+    </div>
+    <p class="cta-note">📞 3184995702 &nbsp;·&nbsp; ✉️ juankhseq@gmail.com</p>
+  </div>
+</section>
 
-		<!-- Footer -->
-			<div id="footer">
+<!-- ── CONTACT ───────────────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info fade-up">
+      <h2>Hablemos de tu empresa</h2>
+      <p>¿Tienes dudas sobre qué normas aplican a tu empresa? ¿Quieres saber cuánto cuesta certificarte? Escríbeme y te respondo en menos de 24 horas.</p>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Juan Carlos Rodriguez. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-					<p>Celular: 3184995702 - Correo: juankhseq@gmail.com</p>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div class="contact-item-text">
+          <strong>WhatsApp / Celular</strong>
+          <a href="https://wa.me/573184995702" target="_blank">+57 318 499 5702</a>
+        </div>
+      </div>
 
-			</div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-item-text">
+          <strong>Correo electrónico</strong>
+          <a href="mailto:juankhseq@gmail.com">juankhseq@gmail.com</a>
+        </div>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="contact-item">
+        <div class="contact-icon">💼</div>
+        <div class="contact-item-text">
+          <strong>LinkedIn</strong>
+          <a href="https://www.linkedin.com/in/juanc-rodriguez-hseq/" target="_blank">juanc-rodriguez-hseq</a>
+        </div>
+      </div>
 
-			 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/account
-          emailjs.init({
-            publicKey: "WR8IkwomWY1reAN9h",
-          });
-      })();
-  </script>
-  <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // these IDs from the previous steps
-              emailjs.sendForm('service_9m2yzea', 'template_hnlb4oq','#contact-form', this)
-                  .then(() => {
-                      console.log('SUCCESS!');
-                      alert("Mensaje enviado exitosamente");
-                  }, 
-                  (error) => {
-                      console.log('FAILED...', error);
-                      alert("Hubo un problema al enviar el mensaje.")
-                  });
-          });
+      <div class="contact-item">
+        <div class="contact-icon">🇨🇴</div>
+        <div class="contact-item-text">
+          <strong>Cobertura</strong>
+          <span>Colombia (presencial y virtual)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form fade-up">
+      <h3>Cuéntame tu caso</h3>
+      <form action="https://formsubmit.co/juankhseq@gmail.com" method="POST">
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="Nuevo contacto desde juancarloshseq.com" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://www.juancarloshseq.com/?gracias=1" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@empresa.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">¿Qué necesitas?</label>
+          <select id="servicio" name="servicio">
+            <option value="">Selecciona un servicio...</option>
+            <option>Certificación ISO 9001</option>
+            <option>Certificación ISO 14001</option>
+            <option>Certificación ISO 45001</option>
+            <option>Implementación SG-SST</option>
+            <option>Guía RUC</option>
+            <option>Auditoría HSEQ</option>
+            <option>Diagnóstico inicial</option>
+            <option>Otro / No sé aún</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Cuéntame más</label>
+          <textarea id="mensaje" name="mensaje" placeholder="¿Cuál es el principal reto de tu empresa en HSEQ? Cuantos más detalles me des, mejor podré ayudarte."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-navy form-submit">
+          Enviar mensaje →
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">Juan C. <span>Rodríguez</span></div>
+        <p>Consultor HSEQ con más de 5 años certificando empresas colombianas en ISO 9001, 14001, 45001 y SST.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/juanc-rodriguez-hseq/" target="_blank" class="social-btn" title="LinkedIn">in</a>
+          <a href="https://wa.me/573184995702" target="_blank" class="social-btn" title="WhatsApp">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#services">Asesoría y Consultoría</a></li>
+          <li><a href="#services">Auditorías HSEQ</a></li>
+          <li><a href="#services">Acompañamiento en campo</a></li>
+          <li><a href="#services">Diagnóstico empresarial</a></li>
+          <li><a href="#services">Pequeñas empresas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Normas</h4>
+        <ul>
+          <li><a href="#normas">ISO 9001 – Calidad</a></li>
+          <li><a href="#normas">ISO 14001 – Medio Ambiente</a></li>
+          <li><a href="#normas">ISO 45001 – SST</a></li>
+          <li><a href="#normas">Guía RUC</a></li>
+          <li><a href="#normas">Decreto 1072 / Res. 0312</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+573184995702">📱 318 499 5702</a></li>
+          <li><a href="mailto:juankhseq@gmail.com">✉️ juankhseq@gmail.com</a></li>
+          <li><a href="#cta">🎁 Asesoría gratuita</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Juan Carlos Rodríguez · Consultor HSEQ Colombia. Todos los derechos reservados.</p>
+      <p>Diseño optimizado para SEO · <a href="https://www.juancarloshseq.com/" style="color:rgba(255,255,255,.4)">juancarloshseq.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ── FLOATING WHATSAPP ──────────────────────────────────────────────── -->
+<a href="https://wa.me/573184995702?text=Hola%20Juan%20Carlos,%20vi%20tu%20página%20y%20quiero%20información%20sobre%20consultoría%20HSEQ"
+   target="_blank" class="wa-float" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  Escríbeme ahora
+</a>
+
+<!-- ── JS ────────────────────────────────────────────────────────────── -->
+<script>
+  // Fade-in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
       }
-  </script>
+    });
+  }, { threshold: 0.12 });
 
-  <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 6000,
-      disableOnInteraction: false,
-    },
-    speed: 800,
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Nav scroll effect
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.borderBottomColor = window.scrollY > 50
+      ? 'rgba(255,255,255,.12)'
+      : 'rgba(255,255,255,.07)';
   });
-  </script>
-  
-<script>
-
 </script>
 
-
-	</body>
+</body>
 </html>
