@@ -1,0 +1,6 @@
+# robots.txt - juancarloshseq.com
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.juancarloshseq.com/sitemap.xml
